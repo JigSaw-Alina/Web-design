@@ -1,0 +1,164 @@
+/* main color #444 */
+/* border color #1098ad */
+/* color #f7f7f7; */
+/* color top #ffe70e */
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 0.7rem solid #1098ad;
+}
+
+.container {
+  width: 50rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 1.25rem 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.main-header h1 {
+  text-transform: uppercase;
+  font-style: italic;
+  color: #1098ad;
+}
+
+nav a:link {
+  margin-right: 1.2rem;
+  margin-top: 0.7rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 0.9rem;
+  font-size: 1.21rem;
+  color: #1098ad;
+}
+
+.post-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.post-header h2::before {
+  content: 'TOP';
+  font-size: 1rem;
+  color: #000;
+  background-color: #ffe70e;
+  padding: 0.3rem 0.6rem;
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  left: 97%;
+  transform: translate(0, -80%);
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+.post-header h2::before {
+  content: TOP;
+}
+
+.post-header .post-img1 {
+  width: 3.3rem;
+  height: auto;
+}
+
+.post-header #author {
+  margin-top: 0.3rem;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.post-header .post-img2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.7rem;
+}
+
+ul,
+ol {
+  margin-top: 1.2rem;
+  margin-left: 3rem;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+ol li:first-child {
+  font-weight: bold;
+}
+
+article {
+  margin-bottom: 4rem;
+}
+aside {
+  border-top: 0.3rem solid #1098ad;
+  border-bottom: 0.3rem solid #1098ad;
+  width: 31.25rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+aside h4 {
+  padding-top: 3.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+aside ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+aside ul li img {
+  width: 4.6rem;
+  height: auto;
+}
+
+aside ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1098ad;
+  display: inline-block;
+  margin-bottom: 0%;
+}
+
+aside aside ul li:last-child {
+  margin-bottom: 0%;
+}
+
+aside ul li p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0%;
+}
+
+footer {
+  padding-bottom: 1rem;
+}
