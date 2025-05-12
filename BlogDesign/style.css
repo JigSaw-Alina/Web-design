@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: 50rem;
+  width: 80rem;
   margin: 0 auto;
   position: relative;
 }
@@ -120,7 +120,7 @@ article {
 aside {
   border-top: 0.3rem solid #1098ad;
   border-bottom: 0.3rem solid #1098ad;
-  width: 31.25rem;
+  /* width: 31.25rem; */
   padding-bottom: 3rem;
   background-color: #f7f7f7;
 }
@@ -137,7 +137,7 @@ aside ul li {
 }
 
 aside ul li img {
-  width: 4.6rem;
+  width: 2.6rem;
   height: auto;
 }
 
@@ -155,10 +155,78 @@ aside aside ul li:last-child {
 
 aside ul li p {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   margin-top: 0%;
 }
 
 footer {
   padding-bottom: 1rem;
+}
+
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+#author {
+  margin-left: 1.2rem;
+  margin-bottom: 0%;
+}
+/* 
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+} */
+
+aside {
+  flex: 0 0 25rem;
+}
+
+article {
+  flex: 0 0 50rem;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.related-author {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0%;
+}
+
+.related-link:link {
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* grid  */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 18.75rem;
+  column-gap: 4.5rem;
+  row-gap: 3rem;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+footer {
+  grid-column: 1 / -1;
 }
