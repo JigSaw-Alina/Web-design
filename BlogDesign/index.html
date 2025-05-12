@@ -17,17 +17,20 @@
           <a href="#">CSS Grid</a>
         </nav>
       </header>
+      <!-- <div class="row"> -->
       <article>
         <header class="post-header">
           <h2>The Basic Language of the Web: HTML</h2>
-          <img
-            src="./img/laura-jones.jpg"
-            alt="post-img-laura"
-            class="post-img1"
-          />
-          <p id="author">
-            Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
-          </p>
+          <div class="author-box">
+            <img
+              src="./img/laura-jones.jpg"
+              alt="post-img-laura"
+              class="post-img1"
+            />
+            <p id="author">
+              Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+            </p>
+          </div>
           <img src="./img/post-img.jpg" alt="post_img" class="post-img2" />
         </header>
         <p>
@@ -81,27 +84,32 @@
       </article>
       <aside>
         <h4>RELATED POST</h4>
-        <ul>
-          <li>
+        <ul class="related">
+          <li class="related-post">
             <img src="./img/related-1.jpg" alt="related_1" />
-            <a href="#">How to Learn Web Development</a>
-            <p>By John Doe</p>
+            <div>
+              <a href="#" class="related-link">How to Learn Web Development</a>
+              <p>By John Doe</p>
+            </div>
           </li>
-          <li>
+          <li class="related-post">
             <img src="./img/related-2.jpg" alt="related_2" />
-            <a href="#">The Unknown Powers of CSS</a>
-            <p>By John Doe</p>
+            <div>
+              <a href="#" class="related-link">The Unknown Powers of CSS</a>
+              <p>By John Doe</p>
+            </div>
           </li>
-          <li>
+          <li class="related-post">
             <img src="./img/related-3.jpg" alt="related_3" />
-            <a href="#">Why JavaScript is Awesome</a>
-            <p>By John Doe</p>
-          </li></li>
+            <div>
+              <a href="#" class="related-link">Why JavaScript is Awesome</a>
+              <p>By John Doe</p>
+            </div>
+          </li>
         </ul>
       </aside>
-      <footer>
-        Copyright © 2025 by The Code Magazine.
-      </footer>
+      <!-- </div> -->
+      <footer>Copyright © 2025 by The Code Magazine.</footer>
     </div>
   </body>
 </html>
