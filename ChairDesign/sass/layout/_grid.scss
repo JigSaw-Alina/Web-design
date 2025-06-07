@@ -1,0 +1,23 @@
+@use '../abstracts/media-queries' as mq;
+
+.container {
+  width: 60rem;
+  margin: 0% auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr; // Default for xs, sm md
+
+  @include mq.respond-to(lg) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    margin-top: 4rem;
+  }
+}
+
+.header__text-box {
+  @include mq.respond-to(lg) {
+    align-self: center;
+  }
+}

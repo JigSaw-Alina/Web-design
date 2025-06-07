@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #343a40;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60rem;
+  margin: 0% auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 992px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__text-box {
+    align-self: center;
+  }
+}
+
+/*
+SPACING SYSTEM (px)
+2 - 0.125  / 4 - 0.25  / 8 - 0.5  / 12 - 0.75 / 16 - 1 / 24 - 1.5 / 32 - 2 
+/ 48 - 3 / 64 - 4 / 80 - 5 / 96 - 6 / 128 - 8
+
+FONT SIZE SYSTEM (px)
+1 - 0.063
+10 - 0.625  / 12 - 0.75 / 14 - 0.875  
+/ 16 - 1 / 18 - 1.125 / 20 - 1.25 / 24 - 1.5 
+/ 30 - 1.875  / 36 - 2.25  
+/ 44 - 2.75 / 52 - 3.25 / 62 - 3.875 
+/ 74 - 4.625 / 86 - 5.375 / 98 - 6.125 / 100 - 6.25
+
+
+*/
+.header__image {
+  display: none;
+}
+@media (min-width: 992px) {
+  .header__image {
+    display: block;
+    width: 100%;
+    border-radius: 0.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__heading-primary {
+    font-size: 2.75rem;
+    line-height: 1.1;
+    letter-spacing: -0.063rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__subheading {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn--big {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 6.25rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}

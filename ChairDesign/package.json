@@ -1,0 +1,16 @@
+{
+  "name": "chair_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch sass --ext scss --exec \"npm run build-css\"",
+    "build-css": "sass --no-source-map sass/main.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "sass": "^1.89.0"
+  }
+}
