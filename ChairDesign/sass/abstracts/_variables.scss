@@ -1,0 +1,17 @@
+$color-primary: #087f5b;
+$color-sub: #099268;
+$color-gray: #343a40;
+$color-white: #ffff;
+$font-stack: 'Inter', sans-serif;
+
+$breakpoints: (
+  xs: 0,
+  // Mobile (default)
+  sm: 576px,
+  // Small devices (phones)
+  md: 768px,
+  // Medium devices (tablets)
+  lg: 992px,
+  // Large devices (desktops)
+  xl: 1200px // Extra large devices (large desktops),,,,,,,
+);

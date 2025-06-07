@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as vars;
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: vars.$color-gray;
+  padding: 3rem;
+  box-sizing: border-box;
+}

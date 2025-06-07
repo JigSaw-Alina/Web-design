@@ -1,0 +1,16 @@
+@use 'variables' as vars;
+@use 'sass:map';
+
+@mixin respond-to($breakpoint, $type: min) {
+  $width: map.get(vars.$breakpoints, $breakpoint);
+
+  @if $type == min {
+    @media (min-width: #{$width}) {
+      @content;
+    }
+  } @else if $type == max {
+    @media (max-width: #{$width - 1px}) {
+      @content;
+    }
+  }
+}

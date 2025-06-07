@@ -1,0 +1,26 @@
+@use '../abstracts/media-queries' as mq;
+@use '../abstracts/variables' as vars;
+
+.btn--big {
+  @include mq.respond-to(lg) {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.btn:link,
+.btn:visited {
+  background-color: vars.$color-primary;
+  color: vars.$color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: inline-block;
+  border-radius: 6.25rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: vars.$color-sub;
+}
